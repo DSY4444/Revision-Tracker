@@ -45,7 +45,7 @@ export default function RevisionsPage() {
     );
   };
 
-  const deleteRevision = async (id: UUID) => {
+  const deleteRevision = async (id: string) => {
     await fetch(`/api/revisions`, {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
